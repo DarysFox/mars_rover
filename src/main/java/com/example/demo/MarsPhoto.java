@@ -4,7 +4,11 @@ public class MarsPhoto {
     private Long id;
     private Integer sol;
     private MarsCamera camera;
+    @JsonProperty("img_src")
     private String imgSrc;
+    JsonProperty("earth_date")
+    private String earthDate;
+    private MarsRover rover;
 
 public Long getId(){
         return id;
@@ -35,6 +39,14 @@ public Long getId(){
 
     public void setImgSrc(String imgSrc){
         this.imgSrc = imgSrc;
+    }
+
+    public String getEarthDate(){
+        return earthDate;
+    }
+
+    public void setEarthDate(String earthDate){
+        this.earthDate = earthDate;
     }
 
     @Override

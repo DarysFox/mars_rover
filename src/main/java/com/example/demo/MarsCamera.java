@@ -3,6 +3,7 @@ package com.example.demo;
 public class MarsCamera {
     private Long id;
     private String name;
+    @JsonProperty("rover_id")
     private Long roverId;
     private String fullName;
 
